@@ -1,5 +1,14 @@
 # Linux Kernel Module – Bar Stool Management System
 
+Linux Kernel Module – Bar Stool Management System
+
+Kernel-level simulation of bar stool and table management using a Linux kernel module written in C.  
+This project demonstrates system calls, concurrency control, and mutex-based synchronization in an operating system environment.
+
+**Course:** Operating Systems (COP4610) – Florida State University  
+**Language:** C  
+**Environment:** Linux Kernel Module
+
 ## Overview
 This project was developed as part of the Operating Systems course at Florida State University.
 
