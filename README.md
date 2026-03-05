@@ -111,7 +111,6 @@ Kernel logs confirm successful initialization, and the module was removed using 
 
 The module was removed successfully using `rmmod`.
 
-![rmmod](images/rmmod.png)
-
 ## Notes
-This repository is a fork of the original team project developed during university coursework.
+
+This project was developed as part of a university operating systems course and is shared here for educational and portfolio purposes.
