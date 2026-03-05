@@ -35,26 +35,39 @@ Contributed to the implementation and testing of the kernel module including:
 - Jeongyeon Kim
 
 ## Project Structure
+
 ```
 project2/
-├── part 1
-│ ├── empty.c
-│ ├── empty.trace
-│ ├── part1.c
-│ └── part1.trace
 │
-├── part 2
-│ ├── timer.c
-│ └── Makefile
+├ README.md
+├ build.png
+├ dmesg.png
+├─ part1
+│  ├─ empty.c
+│  ├─ empty.trace
+│  ├─ part1.c
+│  └─ part1.trace
 │
-├── part 3
-│ └── src
-│ ├── bar_module.c
-│ ├── tables.c
-│ ├── groups.c
-│ ├── servers.c
-│ ├── bar_mutex.c
-│ └── Makefile
+├─ part2
+│  ├─ my_timer.c
+│  └─ Makefile
+│
+└─ part3
+   └─ src
+      ├─ bar_module.c
+      ├─ bar_module.h
+      ├─ bar_mutex.c
+      ├─ bar_mutex.h
+      ├─ groups.c
+      ├─ groups.h
+      ├─ metrics.c
+      ├─ metrics.h
+      ├─ servers.c
+      ├─ servers.h
+      ├─ tables.c
+      ├─ tables.h
+      ├─ test_syscalls.c
+      └─ Makefile
 ```
 
 ## Technologies
@@ -86,13 +99,13 @@ sudo rmmod bar
 
 The kernel module was compiled and inserted into the kernel.
 
-![build](images/build.png)
+![build](build.png)
 
 ### Kernel Logs and Removal
 
 Kernel logs confirm successful initialization, and the module was removed using rmmod.
 
-![dmesg](images/dmesg.png)
+![dmesg](dmesg.png)
 
 ### Module Removal
 
