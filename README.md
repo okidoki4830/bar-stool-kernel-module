@@ -1,6 +1,6 @@
 # Linux Kernel Module – Bar Stool Management System
 
-Linux Kernel Module – Bar Stool Management System
+A Linux kernel module project implementing a bar stool management system with mutex-based synchronization and system call interfaces.
 
 Kernel-level simulation of bar stool and table management using a Linux kernel module written in C.  
 This project demonstrates system calls, concurrency control, and mutex-based synchronization in an operating system environment.
@@ -73,9 +73,46 @@ Requirements:
 - Kernel module build support
 
 Compilation:
-- make
-- sudo insmod bar_module.ko
-- sudo rmmod bar_module
+
+```
+make
+sudo insmod bar.ko
+sudo rmmod bar
+```
+
+## Kernel Module Execution
+
+### Build
+
+The kernel module was successfully compiled using the Linux kernel build system.
+
+![build](images/build.png)
+
+### Module Loaded
+
+The module was inserted into the kernel using `insmod` and verified with `lsmod`.
+
+![insmod](images/insmod.png)
+
+### Kernel Logs
+
+Kernel logs confirm that the module initialized correctly.
+
+![dmesg](images/dmesg.png)
+
+Example output:
+
+```
+Bar Module: initializing
+Mutexes initialized
+Bar Module: initialized : successfully
+```
+
+### Module Removal
+
+The module was removed successfully using `rmmod`.
+
+![rmmod](images/rmmod.png)
 
 ## Notes
 This repository is a fork of the original team project developed during university coursework.
