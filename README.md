@@ -82,31 +82,17 @@ sudo rmmod bar
 
 ## Kernel Module Execution
 
-### Build
+### Build and Load
 
-The kernel module was successfully compiled using the Linux kernel build system.
+The kernel module was compiled and inserted into the kernel.
 
 ![build](images/build.png)
 
-### Module Loaded
+### Kernel Logs and Removal
 
-The module was inserted into the kernel using `insmod` and verified with `lsmod`.
-
-![insmod](images/insmod.png)
-
-### Kernel Logs
-
-Kernel logs confirm that the module initialized correctly.
+Kernel logs confirm successful initialization, and the module was removed using rmmod.
 
 ![dmesg](images/dmesg.png)
-
-Example output:
-
-```
-Bar Module: initializing
-Mutexes initialized
-Bar Module: initialized : successfully
-```
 
 ### Module Removal
 
